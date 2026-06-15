@@ -1,0 +1,29 @@
+# Task 3 Answers
+#
+# 1.
+# list_tables + describe_table + run_select is safer than a single
+# run_sql_query(sql) tool because the agent can discover the schema
+# before writing SQL.
+#
+# Failure mode 1:
+# The agent may guess a table name that does not exist.
+#
+# Failure mode 2:
+# The agent may guess an incorrect column name and generate invalid SQL.
+#
+#
+# 2.
+# describe_table uses SQLAlchemy inspect() to read the schema live.
+# This is better than documenting column names in the tool docstring
+# because the schema can change over time and the tool will always
+# return the current database structure.
+#
+#
+# 3.
+# Even with a SELECT-only guard, run_select can still be unsafe.
+# A user may execute very expensive queries that scan huge tables.
+#
+# One way to harden the tool is:
+# - limit returned rows
+# - use query timeouts
+# - use a read-only database role
