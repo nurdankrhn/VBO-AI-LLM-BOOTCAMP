@@ -2,8 +2,11 @@ langchain
 langchain-openrouter
 python-dotenv
 langchain-google-genai
-sqlmodel
+langchain-openai
 psycopg2-binary
+sqlmodel
 langchain-mcp-adapters
 langchain-tavily
-langchain_openai
+rich
+#week4
+langgraph-checkpoint-postgres
