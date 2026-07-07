@@ -10,3 +10,20 @@ langchain-tavily
 rich
 #week4
 langgraph-checkpoint-postgres
+#week5
+langchain-text-splitters
+bs4
+requests
+langchain-community
+langchain-unstructured
+unstructured[docx,pdf]
+langchain-postgres
+#week5 hw
+langchain-chroma
+chromadb
+openai
+pypdf
+docx2txt
+psycopg[binary,pool]
+pysqlite3-binary
+chardet
