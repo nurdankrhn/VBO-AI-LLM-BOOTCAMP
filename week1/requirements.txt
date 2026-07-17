@@ -27,3 +27,5 @@ docx2txt
 psycopg[binary,pool]
 pysqlite3-binary
 chardet
+#week6
+langgraph
