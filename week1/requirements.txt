@@ -29,3 +29,6 @@ pysqlite3-binary
 chardet
 #week6
 langgraph
+#week7
+deepagents
+pandas
